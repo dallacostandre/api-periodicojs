@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/buscarevista/{idrevista}', [App\Http\Controllers\BuscaRevistaController::class, 'buscarevista'])->name('buscarevista');
-Route::get('/buscaartigo/{id}', [App\Http\Controllers\BuscaRevistaController::class, 'buscaartigo'])->name('buscaartigo');
+Route::get('/buscarevista/{idrevista}', [App\Http\Controllers\BuscaRevistaController::class, 'buscarevista']);
+Route::get('/buscaartigo/{id}', [App\Http\Controllers\BuscaRevistaController::class, 'buscaartigo']);
 
 
