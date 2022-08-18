@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/buscarevista', [App\Http\Controllers\BuscaRevistaController::class, 'buscarevista'])->name('buscarevista');
+Route::POST('/buscarevista', [App\Http\Controllers\BuscaRevistaController::class, 'buscarevista'])->name('buscarevista');
