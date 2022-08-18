@@ -17,10 +17,10 @@ use Illuminate\Http\Request;
 
 class BuscaRevistaController extends Controller
 {
-    public function buscarevista(Request $request)
+    public function buscarevista($id)
     {
-        if ($request) {
-            $idpublicacao = $request->id;
+        if ($id) {
+            $idpublicacao = $id;
             // $buscasubissao = Submissao::orderBy('current_publication_id','DESC')->where('current_publication_id',$idpublicacao)->get();
             $busca = BuscaArtigo::orderBy('issue_id', 'DESC')->where('issue_id', $idpublicacao)->get()->toArray();
             $buscaAnoPublicacao = BuscaArtAno::orderBy('issue_id', 'DESC')->where('issue_id', $idpublicacao)->get()->toArray();
