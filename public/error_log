@@ -1,0 +1,1 @@
+[01-Feb-2022 16:23:19 America/Fortaleza] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /home4/edit8334/api.editoraperiodicojs.com.br/vendor/composer/platform_check.php on line 24
